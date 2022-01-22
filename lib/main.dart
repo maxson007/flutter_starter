@@ -2,8 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
@@ -117,15 +115,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //final wordPair = WordPair.random();
-    return  MaterialApp(
+    return MaterialApp(
       title: 'Startup Name Generator',
-            theme: ThemeData(          // Add the 5 lines from here... 
+      theme: ThemeData(
+        // Add the 5 lines from here...
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
         ),
       ),
-      home: RandomWords(),
+      home: const RandomWords(),
     );
   }
 }
